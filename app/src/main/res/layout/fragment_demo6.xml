@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".demo3">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:text="Basic Demographics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView3" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:text="What is your current relationship status? Choose from the following:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="Single and uninvolved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/single"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="Dating for recreation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dating"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="In a serious exclusive committed relationship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/exclusive"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="In a serious non-exclusive committed relationship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nonexclusive"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="Cohabiting to test the relationship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/test"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="Cohabiting with intentions to marry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/intent"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="Married"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/married"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="Other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/other"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText3"
+            android:hint="If other, please explain" />
+    </RadioGroup>
+
+</RelativeLayout>
