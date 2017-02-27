@@ -30,43 +30,10 @@
         android:id="@+id/textView9" />
 
     <SeekBar
-        style="@style/Widget.AppCompat.SeekBar.Discrete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:max="6"
-        android:progress="3"
-        android:layout_below="@+id/textView10"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="25dp"
-        android:id="@+id/a_rating"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <TextView
-        android:text="Style A"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView10"
-        android:layout_below="@+id/textView9"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp" />
-
-    <TextView
-        android:text="Style B"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/a_rating"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:id="@+id/textView12" />
-
-    <SeekBar
-        style="@style/Widget.AppCompat.SeekBar.Discrete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:max="6"
-        android:progress="3"
+        android:max="100"
+        android:progress="50"
         android:layout_below="@+id/textView12"
         android:layout_marginTop="23dp"
         android:id="@+id/b_rating"
@@ -82,7 +49,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="66dp"
-        android:id="@+id/seekBar4"
+        android:id="@+id/c_rating"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:max="100"
@@ -95,14 +62,13 @@
         android:layout_below="@+id/b_rating"
         android:layout_alignLeft="@+id/textView12"
         android:layout_alignStart="@+id/textView12"
-        android:layout_marginTop="29dp"
-        android:id="@+id/c_rating" />
+        android:layout_marginTop="29dp" />
 
     <TextView
         android:text="Style D"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/seekBar4"
+        android:layout_below="@+id/c_rating"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="23dp"
         android:id="@+id/textView14" />
@@ -114,7 +80,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="21dp"
-        android:id="@+id/seekBar5"
+        android:id="@+id/d_rating"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:max="100"

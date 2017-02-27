@@ -25,7 +25,8 @@
         android:layout_below="@+id/textView3"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="25dp" >
+        android:layout_marginTop="25dp"
+        android:id="@+id/exper_7">
 
         <TextView
             android:text="If it were possible to visit another planet or the moon to be among the first in line to sign up."
@@ -35,32 +36,47 @@
             android:layout_weight="1" />
 
         <RadioButton
-            android:text="Yes"
+            android:text="Does not describe me at all"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/yes"
+            android:id="@+id/seven_not_at_all"
             android:layout_weight="1" />
 
         <RadioButton
-            android:text="No"
+            android:text="Does not describe me very well"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/no"
+            android:id="@+id/seven_not_very_well"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="Describes me somewhat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seven_somewhat"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="Describes me very well"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seven_very_well"
             android:layout_weight="1" />
     </RadioGroup>
 
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/radioGroup3"
+        android:layout_below="@+id/radioGroup6"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="170dp"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="245dp"
+        android:id="@+id/exper_8">
 
         <TextView
-            android:text="I can see how it must be exciting to be in a battle during a war.\n\nResponse categories to each question includes:"
+            android:text="I can see how it must be exciting to be in a battle during a war."
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView8"
@@ -70,28 +86,28 @@
             android:text="Does not describe me at all"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/not_at_all"
+            android:id="@+id/eight_not_at_all"
             android:layout_weight="1" />
 
         <RadioButton
             android:text="Does not describe me very well"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/not_very_well"
+            android:id="@+id/eight_not_very_well"
             android:layout_weight="1" />
 
         <RadioButton
             android:text="Describes me somewhat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/somewhat"
+            android:id="@+id/eight_somewhat"
             android:layout_weight="1" />
 
         <RadioButton
             android:text="Describes me very well"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/very_well"
+            android:id="@+id/eight_very_well"
             android:layout_weight="1" />
     </RadioGroup>
 
