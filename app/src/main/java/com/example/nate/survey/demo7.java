@@ -1,6 +1,7 @@
 package com.example.nate.survey;
 
 import android.content.Context;
+import android.graphics.drawable.ScaleDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -30,6 +31,7 @@ public class demo7 extends Fragment {
 
     public demo7() {
         // Required empty public constructor
+
     }
 
     /**
