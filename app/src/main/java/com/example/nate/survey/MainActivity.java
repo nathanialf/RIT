@@ -1,5 +1,6 @@
 package com.example.nate.survey;
 
+import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -15,6 +16,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+
+import com.jjoe64.graphview.GraphView;
+import com.jjoe64.graphview.series.DataPoint;
+import com.jjoe64.graphview.series.LineGraphSeries;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -96,6 +102,7 @@ public class MainActivity extends AppCompatActivity {
         public PlaceholderFragment() {
         }
 
+        private LineGraphSeries<DataPoint> mSeries1;
         /**
          * Returns a new instance of this fragment for the given section
          * number.
@@ -165,6 +172,9 @@ public class MainActivity extends AppCompatActivity {
                 case 17:
                     rootView = inflater.inflate(R.layout.fragment_rel5, container, false);
                     break;
+                case 18:
+                    rootView = inflater.inflate(R.layout.fragment_graph, container, false);
+                    break;
                 default:
                     rootView = inflater.inflate(R.layout.fragment_demo1, container, false);
                     break;
@@ -196,7 +206,7 @@ public class MainActivity extends AppCompatActivity {
         public int getCount() {
             // Show 3 total pages.
             //return 19;
-            return 17;
+            return 18;
         }
 
         @Override
@@ -211,5 +221,11 @@ public class MainActivity extends AppCompatActivity {
             }
             return null;
         }
+    }
+
+
+    public void gotoGraph(View v){
+        Intent survey = new Intent (this, InflGraph.class);
+        startActivity(survey);
     }
 }
